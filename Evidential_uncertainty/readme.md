@@ -22,7 +22,7 @@ This code is modified version of the base (original) code provided by the [paper
 * To run the code on the terminal: `python main.py --train --dropout --uncertainty --mse --epochs 50`
 
 * Some of the arguements which can be used are : 
-*
+
 ``` 
 python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [--examples]   
 
@@ -40,3 +40,4 @@ python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [-
   
   --examples        to print example data           
 ``` 
+* output plots are generated in root folder
