@@ -21,18 +21,22 @@ This code is modified version of the base (original) code provided by the [paper
 
 * To run the code on the terminal: `python main.py --train --dropout --uncertainty --mse --epochs 50`
 
-* Some of the arguements which can be used are : ``` python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [--examples]   
+* Some of the arguements which can be used are : 
+*
+``` 
+python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [--examples]   <br/>
 
-  --h, --help       show this help message and exit   
+  --h, --help       show this help message and exit   <br/>
   
-  --train           to train the network   
+  --train           to train the network   <br/>
   
-  --epochs EPOCHS   desired number of epochs   
+  --epochs EPOCHS   desired number of epochs   <br/>
   
-  --dropout         whether to use dropout or not   
+  --dropout         whether to use dropout or not   <br/>
   
-  --uncertainty     to use uncertainty    
+  --uncertainty     to use uncertainty    <br/>
   
-  --mse             to use mse uncertainty. Sets loss function to Expected Mean Square Error    
+  --mse             to use mse uncertainty. Sets loss function to Expected Mean Square Error    <br/>
   
-  --examples        to print example data           ``` 
+  --examples        to print example data           <br/>
+``` 
