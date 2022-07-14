@@ -24,19 +24,19 @@ This code is modified version of the base (original) code provided by the [paper
 * Some of the arguements which can be used are : 
 *
 ``` 
-python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [--examples]   <br/>
+python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [--examples]   
 
-  --h, --help       show this help message and exit   <br/>
+  --h, --help       show this help message and exit   
   
-  --train           to train the network   <br/>
+  --train           to train the network   
   
-  --epochs EPOCHS   desired number of epochs   <br/>
+  --epochs EPOCHS   desired number of epochs   
   
-  --dropout         whether to use dropout or not   <br/>
+  --dropout         whether to use dropout or not   
   
-  --uncertainty     to use uncertainty    <br/>
+  --uncertainty     to use uncertainty    
   
-  --mse             to use mse uncertainty. Sets loss function to Expected Mean Square Error    <br/>
+  --mse             to use mse uncertainty. Sets loss function to Expected Mean Square Error    
   
-  --examples        to print example data           <br/>
+  --examples        to print example data           
 ``` 
