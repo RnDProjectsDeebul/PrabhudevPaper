@@ -1,0 +1,41 @@
+# Generative Dynamic Patch Attack on Evidential Uncertainty trained model
+
+This folder provides code to perform GDPA on evidential uncertainty trained model
+
+### Folder and file descriptions
+* `Data folder - add training and validation dataset to this folder`
+* `Output folder - if you are using shell scripts to run the code then output files are generated in this folder`
+* `results folder - trained model in the format given by base paper is saved in this folder`
+* `saved_model folder - trained model in normal format is saved in this folder`
+* `data file - dataset is imported and pre-processed in this file`
+* `helpers file - helper methods are written in this file`
+* `losses file - different loss functions are defined in this file`
+* `train file - training method is defined in this file`
+* `main file - main class is defined in this file`
+* `exp_train.sh - shell file to run the main function
+
+### How to run
+* Shell file `exp_train.sh` can be used to run the code on the server
+
+* To run the code on the terminal: `python main.py --train --dropout --uncertainty --mse --epochs 50`
+
+* Some of the arguements which can be used are : 
+
+``` 
+python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [--examples]   
+
+  --h, --help       show this help message and exit   
+  
+  --train           to train the network   
+  
+  --epochs EPOCHS   desired number of epochs   
+  
+  --dropout         whether to use dropout or not   
+  
+  --uncertainty     to use uncertainty    
+  
+  --mse             to use mse uncertainty. Sets loss function to Expected Mean Square Error    
+  
+  --examples        to print example data           
+``` 
+* output plots are generated in root folder
