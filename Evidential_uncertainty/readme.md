@@ -14,7 +14,7 @@ This code is modified version of the base (original) code provided by the [paper
 * `losses file - different loss functions are defined in this file`
 * `train file - training method is defined in this file`
 * `main file - main class is defined in this file`
-* `exp_train.sh - shell function is written in this file to run the main function (can be ignored if shell programming format is not followed)`
+* `exp_train.sh - shell file to run the main function
 
 ### How to run
 * Shell file `exp_train.sh` can be used to run the code on the server
