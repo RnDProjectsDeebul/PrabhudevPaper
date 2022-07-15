@@ -1,41 +1,40 @@
 # Generative Dynamic Patch Attack on Evidential Uncertainty trained model
 
-This folder provides code to perform GDPA on evidential uncertainty trained model
+This folder provides code to perform GDPA on evidential uncertainty trained model. GDPA performed is based on [paper: Generative Dynamic Patch Attack](https://arxiv.org/pdf/2111.04266.pdf) and [base code](https://github.com/lxuniverse/gdpa)
 
 ### Folder and file descriptions
 * `Data folder - add training and validation dataset to this folder`
 * `Output folder - if you are using shell scripts to run the code then output files are generated in this folder`
-* `results folder - trained model in the format given by base paper is saved in this folder`
-* `saved_model folder - trained model in normal format is saved in this folder`
 * `data file - dataset is imported and pre-processed in this file`
-* `helpers file - helper methods are written in this file`
-* `losses file - different loss functions are defined in this file`
-* `train file - training method is defined in this file`
-* `main file - main class is defined in this file`
-* `exp_train.sh - shell file to run the main function
+* `gdpa file - main class and GDPA attack functions are defined in this file`
+* `models file - custom models are defined in this file`
+* `utils file - help methods are defined in this file`
+* `gdpa.sh - shell file to run the main function
 
 ### How to run
-* Shell file `exp_train.sh` can be used to run the code on the server
+* Shell file `gdpa.sh` can be used to run the code on the server
 
-* To run the code on the terminal: `python main.py --train --dropout --uncertainty --mse --epochs 50`
+* To run the code on the terminal: 
+ 
+ `python gdpa.py --dataset vggface --data_path Data --vgg_model_path saving_normal_way_model_Face_data224.pt --epochs 50 --patch_size 23`
 
 * Some of the arguements which can be used are : 
 
 ``` 
-python main.py [--h] [--train] [--epochs] [--dropout] [--uncertainty] [--mse] [--examples]   
+python main.py [--dataset] [--data_path] [--vgg_model_path] [--epochs] [--patch_size] [--batch_size] [--device]   
 
-  --h, --help       show this help message and exit   
+  --dataset           name of the dataset used   
   
-  --train           to train the network   
+  --data_path         dataset path   
   
-  --epochs EPOCHS   desired number of epochs   
+  --epochs            desired number of epochs   
   
-  --dropout         whether to use dropout or not   
+  --patch_size        patch size with respect to dataset is entered here   
   
-  --uncertainty     to use uncertainty    
+  --batch_size        batch size is defined here    
   
-  --mse             to use mse uncertainty. Sets loss function to Expected Mean Square Error    
+  --vgg_model_path    path to the trained model is given here
   
-  --examples        to print example data           
+  --device            cpu or gpu or other server where code is ran is mentioned here           
 ``` 
 * output plots are generated in root folder
